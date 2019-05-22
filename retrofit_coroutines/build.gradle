@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'maven'
+    bintrayRepo = 'retrofit-coroutines'
     bintrayName = 'retrofit-coroutines'
 
     publishedGroupId = 'fm.finch'
@@ -12,8 +12,8 @@ ext {
 
     libraryDescription = 'Kotlin coroutines extensions for Retrofit2'
 
-    siteUrl = 'https://github.com/nuuneoi/FBLikeAndroid'
-    gitUrl = 'https://github.com/nuuneoi/FBLikeAndroid.git'
+    siteUrl = 'https://github.com/jkstop/RetrofitCoroutineExtensions'
+    gitUrl = 'https://github.com/jkstop/RetrofitCoroutineExtensions.git'
 
     developerId = 'jkstop'
     developerName = 'Ilya Smirnov'

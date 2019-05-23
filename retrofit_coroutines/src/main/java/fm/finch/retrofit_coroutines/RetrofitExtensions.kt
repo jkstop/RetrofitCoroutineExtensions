@@ -91,9 +91,9 @@ fun <T: Any> Call<T>.executeSync(executeCallback: ExecuteCallback<T>) {
     try {
         val response = this.execute()
         if (response.isSuccessful) {
-            response.body()?.let { executeCallback.onSuccess(it) } ?: throw NullPointerException("Loss response body")
+            response.body()?.let { executeCallback.onSuccess(it) } ?: throw ResponseFailureException("Loss response body")
         } else {
-            throw RuntimeException("Response is not success")
+            throw ResponseFailureException("Response is not success")
         }
     } catch (e: Exception) {
         executeCallback.onFail(e)
